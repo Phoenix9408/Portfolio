@@ -7,11 +7,6 @@
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-<div class="content section-padding valign">
-  …
-</div>
-
 .profile-pic {
   position: relative;
   max-width: 130px;
@@ -746,7 +741,6 @@ small {
   }
 }
 
-#intro .content {
-  margin-left: 10%;
-  margin-top: 200px;
+.side-nav.fixed {
+  top: 50px !important;
 }
