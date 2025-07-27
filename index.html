@@ -974,15 +974,17 @@
     });
 
     // Materialize pour scrollspy, sideNav et lightbox
-    $(document).ready(function () {
-      $('.scrollspy').scrollSpy();
-      $('.button-collapse').sideNav({
-        menuWidth: 190,
-        edge: 'left',
-        closeOnClick: true
-      });
-      $('.materialboxed').materialbox();
-    });
+      document.addEventListener('DOMContentLoaded', function() {
+   // ScrollSpy
+        const elemsScroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(elemsScroll);
+   // SideNav
+       const elemsSidenav = document.querySelectorAll('.sidenav');
+       M.Sidenav.init(elemsSidenav);
+  // Lightbox materialboxed
+      const elemsBox = document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(elemsBox);
+});
   </script>
 </body>
 </html>
